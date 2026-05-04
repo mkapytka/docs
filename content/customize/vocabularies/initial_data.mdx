@@ -1,5 +1,6 @@
 import {Difficulty} from '@/components/difficulty'
 import {ToDo} from '@/components/todo'
+import { Callout } from 'nextra/components'
 
 # Initial data for vocabularies <Difficulty level="easy" />
 
@@ -70,6 +71,11 @@ of the vocabulary item in different languages. You might add text props,
 tags or custom fields here as well.
 See [Invenio vocabularies schema](https://github.com/inveniosoftware/invenio-vocabularies/blob/master/invenio_vocabularies/records/jsonschemas/vocabularies/vocabulary-v1.0.0.json)
 for more information.
+
+
+<Callout type="info">
+You should also [customize the UI for your vocabularies in `invenio.cfg` file](../configure/reference.mdx#configure_vocabulary).
+</Callout>
 
 ## Using specific python package
 
