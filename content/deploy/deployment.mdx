@@ -75,6 +75,29 @@ project contains the configuration needed to build and deploy your application.
 
 If you do not yet have access, contact CESNET support before continuing.
 
+## Register a Virtual Organization (VO) in Perun
+
+Before the first deployment to NRP infrastructure, a Virtual Organization
+must be registered in Perun. To create one, the following information
+is required:
+
+* **Full name** (≤128 characters): ...
+* **Short name** (≤24 characters; only letters, digits, dot, dash and
+  underscore): `vo_<repo_name>_test` and `vo_<repo_name>_prod`
+  (follows the naming convention; cannot be changed later)
+* **Email of the primary technical administrator** responsible for
+  operating the repository: ...
+* **Email of the repository administrator** (primary responsible person): ...
+* **Name of the institution and department** responsible for operating
+  the repository: ...
+* **Name of the software platform**: CESNET Invenio
+* **Will it run on the standardized NRP infrastructure?** Yes
+  (NRP CESNET S3 storage and K8s cluster)
+* **Production deployment URL** (test follows the convention
+  `https://test1.<repo_name>.du.cesnet.cz/`): ...
+
+Please provide this information to **repository systems specialists**.
+
 ## Before your first deployment
 
 Before deploying, make sure the following are ready:
@@ -82,6 +105,7 @@ Before deploying, make sure the following are ready:
 - your repository source code is in GitHub
 - CESNET DevOps has created the deployment project
 - you can access the deployment project in CESNET GitLab
+- a Virtual Organization has been registered in Perun
 - your repository contains the deployment scripts described below
 - you know which version you want to deploy
 
